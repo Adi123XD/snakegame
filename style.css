@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+     background: url(assets/bg-image.jpeg);
+    background-color: #013220; 
+    background-blend-mode: hard-light;
+    /* background: radial-gradient(grey,black); */
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.board{
+    min-width: 90vmin;
+    min-height: 90vmin;
+    background: linear-gradient(135deg, rgba(120,153,0,1) 0%, rgba(184,206,71,1) 100%);
+    /* background: linear-gradient(#F8B195, #F67280, #C06C84); */
+    /* background-color:; */
+    opacity: 2;
+    border: 2px solid white;
+    display: grid;
+    grid-template-rows: repeat(20,1fr);
+    grid-template-columns: repeat(20,1fr);
+}
+.food{
+    /* background-color: red; */
+    background-image: url(assets/apple.png);
+    background-size: 36px 36px;
+    width: 36px;
+    height: 36px;
+    
+}
+.snake{
+   
+    background:radial-gradient(turquoise,blue);
+    border: 2px solid black;
+
+    transform: rotate(-90deg);
+    border-radius: 12px;
+    background-size: 30px 30px;
+    width: 36px;
+    height: 36px;
+}
+.head{
+   width: 36px;
+   height: 36px;
+   background: radial-gradient(cyan,darkblue);
+   transform: scale(1.05);
+   border: 2px solid black;
+   border-radius: 9px;
+}
+.scorecard{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    
+    color: white;
+    font-size: 1.4rem;
+    top: 20px;
+    left: 30px;
+    text-align: center;
+    padding: auto;
+    border: 2px solid black;
+}
+.highscore{
+    width: 100px;
+    height: 100px;
+    color: white;
+    border: 2px solid black;
+}
